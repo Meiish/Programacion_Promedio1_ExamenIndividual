@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace ExamenIndividual_Progra_Prom1
 {
-    internal class Program
+    internal interface IDamagable
     {
-        static void Main(string[] args)
-        {
-            Game game = new Game();
-            game.NewGame();
-        }
+        void TakeDamage(int amount);
     }
 }
